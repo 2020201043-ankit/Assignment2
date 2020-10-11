@@ -1,0 +1,132 @@
+
+
+
+<html>
+<title>Ankit Parashar</title>
+<head>
+	<link rel="stylesheet" href="other/line.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+p.focus {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+h2
+{
+	font-family: :"Comic Sans MS",cursive, sans-serif;
+}
+
+
+
+</style>
+<script>
+	var i = 0; 
+   var slide = [];	
+   var time = 3000;	
+	 
+
+slide[0] = "images/photo1.jpg";
+slide[1] = "images/photo2.jpg";
+slide[2] = "images/photo3.jpg";
+
+
+// Change Image
+function showbegins(){
+	document.slides.src = slide[i];
+
+	// Check If Index Is Under Max
+	if(i < slide.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("showbegins()", time);
+}
+
+// Run function when page loads
+window.onload=showbegins;
+
+
+   </script>
+
+
+<Body> 
+	<div class="container" style="background-color:lavender;">
+		<div class="row">
+			<div class="col-sm-2">
+				<h4><a href="index.html">Home</a></h4>
+			</div>
+			<div class="col-sm-2">
+				<h4><a href="other/project.html">Projects</a></h4>
+			</div>
+			<div class="col-sm-2">
+				<h4><a href="other/Hobbies.html">Hobbies</a></h4>
+			</div>
+			<div class="col-sm-2">
+				<h4><a href="other/Education.html">Education</a></h4>
+			</div>
+			<div class="col-sm-2">
+				<h4><a href="other/register.html">Register</a></h4>
+			</div>
+
+			<div class="col-sm-1">
+				<p><b>Ankit Parashar</b></p>
+			</div>
+			<div class="col-sm-1">
+				<img src="images/ankit.jpeg" alt="ankit" width="40" height="40" style="border-radius: 50%;" >
+			</div>
+
+			
+		</div>
+	</div>
+
+    <div class="container">
+    	<br>
+    	<br>
+      <center><img name="slides" width="500" height="600"></center>
+	</div>
+
+	<div class="container">
+		<p> <h1> Welcome</h1></p>
+		<br>
+		<h3><p class="focus">  I am Ankit, Currently I am pursuing <b> M-tech in CSE from IIIT Hyderabad</b>. Enjoy your visit here :)
+		</p>
+	</h3>
+
+	</div>
+	<br>
+	<br>
+	<div class="horizontal"></div>
+	<br>
+	
+
+
+         <div class="col-sm-2 horizontal"></div>
+         <div class=col-sm-5>
+         	 <br>
+         	 <br>
+         	 <p> <h2><center>Contact me </center></h2></p>
+         	 <br>
+         	 <br>
+
+         	  <center><a href="https://www.linkedin.com/in/ankit-parashar-046716116/" >
+             <img  src="images/link.jpg" width="100" height="100">
+                </a></center>
+               </div>
+         </div>
+     </div>
+
+	
+
+
+
+
+</Body>
+
+
+</html>
